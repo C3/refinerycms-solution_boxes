@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      solution_boxes:
+        title: Solution Boxes
+    solution_boxes:
+      admin:
+        solution_boxes:
+          actions:
+            create_new: Add New Solution Box
+            reorder: Reorder Solution Boxes
+            reorder_done: Done Reordering Solution Boxes
+          records:
+            title: Solution Boxes
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Solution Boxes yet. Click "Add New Solution Box" to add your first solution box.
+          solution_box:
+            view_live_html: View this solution box live <br/><em>(opens in a new window)</em>
+            edit: Edit this solution box
+            delete: Remove this solution box forever
+      solution_boxes:
+        show:
+          other: Other Solution Boxes
+  activerecord:
+    attributes:
+      'refinery/solution_boxes/solution_box':
+        screenshot: Screenshot
+        title: Title
+        description: Description
+        link: Link

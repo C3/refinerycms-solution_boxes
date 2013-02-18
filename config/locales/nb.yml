@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      solution_boxes:
+        title: Solution Boxes
+    solution_boxes:
+      admin:
+        solution_boxes:
+          actions:
+            create_new: Lag en ny Solution Box
+            reorder: Endre rekkefølgen på Solution Boxes
+            reorder_done: Ferdig å endre rekkefølgen Solution Boxes
+          records:
+            title: Solution Boxes
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Solution Boxes enda. Klikk på "Lag en ny Solution Box" for å legge til din første solution box.
+          solution_box:
+            view_live_html: Vis hvordan denne solution box ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne solution box
+            delete: Fjern denne solution box permanent
+      solution_boxes:
+        show:
+          other: Andre Solution Boxes
+  activerecord:
+    attributes:
+      'refinery/solution_boxes/solution_box':
+        screenshot: Screenshot
+        title: Title
+        description: Description
+        link: Link

@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      solution_boxes:
+        title: Solution Boxes
+#        article: masculino/femenino
+    solution_boxes:
+      admin:
+        solution_boxes:
+          actions:
+            create_new: Crear nuevo solution box
+            reorder: Reordenar solution boxes
+            reorder_done: Reordenación de solution boxes completada
+          records:
+            title: Solution Boxes
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay solution boxes todavía. Pulsa en "Crear nuevo Solution Box" para crear tu primer solution box.
+          solution_box:
+            view_live_html: Ver este solution box como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este solution box
+            delete: Borrar este solution box para siempre
+      solution_boxes:
+        show:
+          other: Otros solution boxes
+  activerecord:
+    attributes:
+      'refinery/solution_boxes/solution_box':
+        screenshot: Screenshot
+        title: Title
+        description: Description
+        link: Link

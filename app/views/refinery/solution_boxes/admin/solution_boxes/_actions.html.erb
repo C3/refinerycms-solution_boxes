@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::SolutionBoxes::Admin::SolutionBoxesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.solution_boxes_admin_solution_boxes_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_solution_boxes_admin_solution_box_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::SolutionBoxes::Admin::SolutionBoxesController.sortable? && ::Refinery::SolutionBoxes::SolutionBox.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Solution Boxes"),
+                 refinery.solution_boxes_admin_solution_boxes_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Solution Boxes"),
+                 refinery.solution_boxes_admin_solution_boxes_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

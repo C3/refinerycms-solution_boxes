@@ -1,0 +1,12 @@
+<section class="center-container" id="solution-boxes">
+	<% @solution_boxes.each do |solution| %>
+		<%= link_to solution.link, :class => 'solution-link' do %>
+			<div class="solution-box">
+				<%= image_fu(solution.screenshot) %>
+				<h3><%= solution.title %></h3>
+				<%= solution.description.html_safe %>
+				<p class="more-button">tell me more</p>
+			</div>
+		<% end %>
+	<% end %>
+</section>

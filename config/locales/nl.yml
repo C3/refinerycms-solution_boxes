@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      solution_boxes:
+        title: Solution Boxes
+    solution_boxes:
+      admin:
+        solution_boxes:
+          actions:
+            create_new: Maak een nieuwe Solution Box
+            reorder: Wijzig de volgorde van de Solution Boxes
+            reorder_done: Klaar met het wijzingen van de volgorde van de Solution Boxes
+          records:
+            title: Solution Boxes
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Solution Boxes. Druk op 'Maak een nieuwe Solution Box' om de eerste aan te maken.
+          solution_box:
+            view_live_html: Bekijk deze solution box op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze solution box
+            delete: Verwijder deze solution box voor eeuwig
+      solution_boxes:
+        show:
+          other: Andere Solution Boxes
+  activerecord:
+    attributes:
+      'refinery/solution_boxes/solution_box':
+        screenshot: Screenshot
+        title: Title
+        description: Description
+        link: Link
